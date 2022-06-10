@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Careers</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div id="pageloader" class="pageloader is-left-to-right"></div>
+    <div id="infraloader" class="infraloader is-active"></div>
+
+    <main>
+<!--Listing scroll nav-->
+<div
+  class="listing-nav is-active"
+  x-data="initListingNavbar()"
+  x-on:scroll.window="scroll()"
+
+>
+  <div class="container">
+    <div class="listing-nav-inner">
+      <div class="left">
+        <a href="#charityfund" class="nav-item scroll-link">
+          <span>Charity Fund</span>
+        </a>
+        <a href="#donate" class="nav-item scroll-link">
+          <span>Donate</span>
+        </a>
+        <a href="#gemma" class="nav-item scroll-link">
+          <span>Gemma</span>
+        </a>
+        <a href="#contacts" class="nav-item scroll-link">
+          <span>Contacts</span>
+        </a>
+      </div>
+      <div class="right">
+        <button
+          class="navigation-link is-icon mx-4 modal-trigger"
+          data-modal="languages-modal"
+        >
+          <i data-feather="globe"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="hero is-big is-grey is-bold"
+  data-background="./img/Ukraine.jpeg"
+  data-demo-background="./img/photo/bg/team-happy.jpg"
+>
+  <div class="hero-overlay"></div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-12">
+          <div class="hero-text is-light has-text-centered">
+            <h1 class="title mb-4 is-spaced is-1 is-bold">CHARITY FOUNDATION <p>'ASSISTANCE FOR THE POOR'</p></h1>
+            <p class="subtitle">
+              A program to raise funds for the hemostatic drug "Gemma" has been opened
+              <p class="subtitle stressed-1 mb-4">
+                "Gemma" drug is designed to replace foreign hemostatic dressings Celox, Quiclot, Hemostop.
+              </p>
+            </p>
+            <div class="has-text-centered mt-10">
+              <a href="#donate" class="button is-primary mx-1">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div id="charityfund" class="py-6">
+      <div class="boxed-text">
+        <h4 class="subtitle is-6 pb-2 text-primary">WHO WE ARE</h4>
+        <h2 class="title is-3 is-bold">CHARITY ORGANIZATION "CHARITY FOUNDATION 'ASSISTANCE FOR THE POOR'"</h2>
+        <p class="stressed-1 mb-4">
+          Dear friends!
+Ukraine. Bucha. Irpen. Borodyanka. Kharkiv. Chernihiv. Okhtyrka. Trostyanets. Izyum. Mariupol. These are hero cities wiped off the face of the earth. They are at the forefront, they are the guardians the of universal human values, freedom, the right to choose. Thousands of civilian casualties must not be in vain. Tortured children, their mothers who died of starvation, raped women, executed men shot in the back of the head. All these are victims of the inhuman, racist regime.
+Ukraine is defending the whole of Europe, the entire Western world.
+It is Ukraine that covers the whole civilization with its back. But capacity in the middle of the country is not enough. Every day we suffer great losses, both financial and human. Help us so that they would not become useless. These sacrifices must not be empty. Every day, volunteers do millions of good and important things - bringing food, water, clothes, power generators for civilians. The military are assisted by tactical clothing, thermal stars, food, camouflage nets and a million other things.
+        </p>
+        <p class="stressed-1 mb-4">
+          Since the first days of the Russian invasion, the Charity Foundation Assistance to the Poor has united volunteers to help both defenders of the Motherland and immigrants. The Foundation organizes the supply of humanitarian aid from the United States, Spain, Germany, Poland and Switzerland. Thermal imagers and bulletproof vests were purchased and handed over to the Armed Forces.
+        </p>
+        <p class="stressed-1 mb-4">
+          Already today, with the support and financial assistance of the Charitable Foundation "Charitable Foundation 'Assistance for the Poor'" in Poltava, the production of hemostatic agent for the battlefield "Gemma" (hemostatic drug) was established.
+        </p>
+        <p class="stressed-1 mb-4">
+          This drug is designed to replace foreign hemostatic dressings Celox, Quiclot, Hemostop.
+        </p>
+        <p class="stressed-1 mb-4">
+          Hemma hemostatic agent does not have such side effects as Quiclot (wound burn) and Celox (tissue necrosis and amputation of limbs during prolonged stay of the drug in the wound).
+        </p>
+        <p class="stressed-1 mb-4">
+          Hemostatic agent "Gemma" does not injure tissue, can stay in the wound for a long time, does not interfere with the functioning of healthy human cells, is biocompatible with human tissue, in excess of more than two weeks in the wound completely biodegrades. The ability of the drug to biodegrade and the property of endless swelling (absorbs more than 8 times the volume of fluid of its own weight), the absence of allergic and reactogenic properties make this drug promising for use not only on the battlefield but also in surgical departments to block severe, fatal bleeding .
+The experience of using the drug on the battlefields in 2014-2019 proved the safety and effectiveness of Gemma.
+        </p>
+        <p class="stressed-1 mb-4">
+          Authors of the development: Artur Martinov, Alexander Bogatyrev, Dmitry Manich.
+Dmytro Manych, one of the authors of the development, supervises the production of the drug in Poltava. Preparation patented (patent UA 112099 C2).
+        </p>
+        <p class="stressed-1 mb-4">
+          The first batch of the produced drug was sent to the medical battalion of the Azov Regiment, military units: A 3384, A0998.
+        </p>
+        <p class="stressed-1 mb-4">
+          UAH 180,000 was spent on the start of production and the production of 2000-2500 packages of the Charity Foundation "Assistance for the Poor". At present, our charitable organization has exhausted its own opportunities to finance production (the drug is not sold, but is provided free of charge to the Armed Forces in the form of assistance).
+        </p>
+        <p class="stressed-1 mb-4">
+          Charity organization "Charity Foundation 'Assistance to the Poor' " expresses respect for you and asks you to provide assistance, which will be used in the future to finance the production of hemostatic drug "Gemma".
+        </p>
+      </div>
+    </div>
+
+    <div class="p-6" id="gemma">
+      <img src="./img/logo.webp" alt="logo">
+    </div>
+
+    <div
+    id="lightgallery"
+    class="listing-cover-wrapper is-6"
+    x-data="initCover()"
+  >
+    <a
+      class="listing-cover slide has-background-image"
+      data-background="./img/gemma_01.png"
+      href="./img/gemma_01.png"
+    ></a>
+    <a
+      class="listing-cover slide has-background-image"
+      data-background="./img/gemma_02.png"
+      href="./img/gemma_02.png"
+    ></a>
+    <a
+      class="listing-cover slide has-background-image"
+      data-background="./img/gemma_03.png"
+      href="./img/gemma_03.png"
+    ></a>
+    <a
+      class="listing-cover slide has-background-image"
+      data-background="./img/gemma_04.png"
+      href="./img/gemma_04.png"
+    ></a>
+  </div>
+
+    <div id="donate" class="py-6" id="donate">
+      <div class="boxed-text-lg">
+        <h4 class="subtitle is-6 pb-2 text-primary">Donations</h4>
+        <h2 class="title is-3 is-bold">We ask to transfer donations:</h2>
+        <p class="stressed-1">
+          <p class="stressed-1">Charity Foundation "Assistance for the Poor",</p>
+          <p class="stressed-1">USREOU code 40914811,</p>
+          <p class="stressed-1">Account № UA 793314890000026004241016001</p>
+          <p class="stressed-1">JSC "Poltava-Bank",</p>
+          <p class="stressed-1"> MFO 331489,</p>
+          <p class="stressed-1  mb-4">USREOU code of the banking institution 09807595.</p>
+        </p>
+        <p class="stressed-1 mb-4">
+          In the purpose of payment, please specify: Charitable assistance (donation) for the drug "Gemma"
+        </p>
+        <p class="stressed-1">
+          Sincerely,
+          <p class="stressed-1">Vice director of Charity organization</p>
+          <p class="stressed-1">"Charity Foundation</p>
+          <p class="stressed-1">"Assistance for the Poor" "</p>
+          <p class="stressed-1  mb-4">Vasily Khramov</p>
+        </p>
+        <form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout" target="_blank">
+          <input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6IkRvbmF0aW9ucyIsInB1YmxpY19rZXkiOiJzYW5kYm94X2k3MzMzMDI4MjM1MyIsImxhbmd1YWdlIjoicnUifQ==" />
+          <input type="hidden" name="signature" value="ycrWjltMEi1ekqDNz/y2+86AE1Y=" />
+          <button class="liqpay-button">
+            <img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"/>
+            <span>Donate with LiqPay</span>
+          </button>
+        </form>
+        <form action="https://www.portmone.com.ua/gateway/" method="post" target="_blank">
+          <input type="hidden" name="bodyRequest" value='{
+            "paymentTypes":{"card":"Y","portmone":"Y","token":"N",
+                            "visacheckout":"Y","createtokenonly":"N"},
+            "priorityPaymentTypes":{"card":"1","portmone":"2",
+                                    "token":"0","visacheckout":"0","createtokenonly":"0"},
+            "payee":{"payeeId":"3048","login":"","dt":"","signature":"", "shopSiteId":""},
+            "order":{"description":"Test Payment","shopOrderNumber":"SHP-00445401",
+                     "billAmount":"100","attribute1":"1","attribute2":"2","attribute3":"3",
+                     "attribute4":"4","attribute5":"","successUrl":"","failureUrl":"",
+                     "preauthFlag":"N","billCurrency":"UAH", "encoding":""},
+            "token":{"tokenFlag":"N","returnToken":"N","token":"","cardMask":"",
+                     "otherPaymentMethods":"Y","sellerToken":""},
+            "payer":{"lang":"uk", "emailAddress":"test@ukr.net"},
+            "style":{"type":"light","logo":"","backgroundColorHeader":"",
+                     "backgroundColorButtons":"","colorTextAndIcons":"",
+                     "borderColorList":"","bcMain":""}
+          }' />
+          <input type="hidden" name="typeRequest" value='json' />
+          <input class="portmone-btn" type="submit" value="Portmone.com"  />
+        </form>
+
+      </div>
+
+    <div class="boxed-video-lg py-6">
+      
+      <div class="pt-6">
+        <div class="boxed-text-lg">
+          <h4 class="subtitle is-6 pb-2 text-primary">Reports and documents</h4>
+          <h2 class="title is-5 has-space">We responsibly follow the documentation and are ready to show all the fund's reports</h2>
+
+          <div
+            class="
+              columns
+              is-multiline
+              b-columns-third-tablet-p
+              has-text-centered
+              pt-6
+            "
+          >
+            <div class="column cards is-4">
+              <div class="svg-icon mb-4 is-centered">
+                <img class="mb-2" src="./img/icons/custom/contract.svg" alt="" />
+              </div>
+              <h4 class="title is-6 has-space">Extract from the USR</h4>
+              <a 
+                href="https://drive.google.com/file/d/1YzqzXDFyNGt3OD0SN24ny_cTe2lzHlhk/view?usp=sharing" 
+                download 
+                target="_blank" 
+                class="stressed-1 is-sm mb-4"
+              >
+                Download ↓
+              </a>
+            </div>
+            <div class="column cards is-4">
+              <div class="svg-icon mb-4 is-centered">
+                <img class="mb-2" src="./img/icons/custom/contract.svg" alt="" />
+              </div>
+              <h4 class="title is-6 has-space">Act of acceptance of the transfer of charitable assistance
+              </h4>
+              <a 
+                href="https://drive.google.com/file/d/1P93UljImIgznwz5tDiNtJlH-CN-nznCO/view?usp=sharing" 
+                download 
+                target="_blank" 
+                class="stressed-1 is-sm mb-4"
+              >
+                Download ↓
+              </a>
+            </div>
+            <div class="column cards is-4">
+              <div class="svg-icon mb-4 is-centered">
+                <img
+                  class="mb-2"
+                  src="./img/icons/custom/certificate.svg"
+                  alt=""
+                />
+              </div>
+              <h4 class="title is-6 has-space">Description of the patent for the invention
+              </h4>
+              <a 
+                href="https://drive.google.com/file/d/1P0MFWhuJ4q_hRcgrFFYwbcztyif_sJVJ/view?usp=sharing" 
+                download 
+                target="_blank"
+                class="stressed-1 is-sm mb-4"
+              >
+                Download ↓
+              </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more-listings">
+      <div class="scheduled-listings" x-data="initMoreListings()">
+        <div class="scheduled-listings-inner glide more-events-glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="scheduled-listing">
+                  <div
+                    class="scheduled-listing-image"
+                    data-background="./img/image_01.webp"
+                    data-demo-background="./img/image_01.webp"
+                  >
+                  </div>
+              </li>
+              <li class="glide__slide">
+                <div class="scheduled-listing">
+                  <div
+                    class="scheduled-listing-image"
+                    data-background="./img/image_02.jpeg"
+                    data-demo-background="./img/image_02.jpeg"
+                  >
+                  </div>
+              </li>
+              <li class="glide__slide">
+                <div class="scheduled-listing">
+                  <div
+                    class="scheduled-listing-image"
+                    data-background="./img/image_03.webp"
+                    data-demo-background="./img/image_03.webp"
+                  >
+                  </div>
+              </li>
+              <li class="glide__slide">
+                <div class="scheduled-listing">
+                  <div
+                    class="scheduled-listing-image"
+                    data-background="./img/image_04.jpeg"
+                    data-demo-background="./img/image_04.jpeg"
+                  >
+                  </div>
+              </li>
+              <li class="glide__slide">
+                <div class="scheduled-listing">
+                  <div
+                    class="scheduled-listing-image"
+                    data-background="./img/image_05.webp"
+                    data-demo-background="./img/image_05.webp"
+                  >
+                  </div>
+              </li>
+              <li class="glide__slide">
+                <div class="scheduled-listing">
+                  <div
+                    class="scheduled-listing-image"
+                    data-background="./img/image_06.jpeg"
+                    data-demo-background="./img/image_06.jpeg"
+                  >
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i data-feather="arrow-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="contacts" class="section is-light-grey">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-6">
+        <p class="underlink mb-4 mt-4">Contact Us</p>
+        <p class="stressed-1 mb-4">CHARITY ORGANIZATION "CHARITY FOUNDATION 'ASSISTANCE FOR THE POOR'"</p>
+        <p class="stressed-1 contacts-field mb-4">Vasily Khramov
+          <a href="tel:+380506362806" class="stressed-1">+380506362806</a>  
+        </p>
+        <p class="stressed-1 contacts-field">Alexander Fernebok
+          <a href="tel:+380503278783" class="stressed-1">+380503278783</a>  
+          <a href="mailto:slvat@ukr.net" class="stressed-1 mb-4">slvat@ukr.net</a>  
+          </p>
+        <p class="stressed-1">Ukraine, 36000, m. Poltava, street Lidova, 10</p>  
+      </div>
+      <div class="column is-6">
+        <div
+          class="card card-form"
+          x-data="initHeroCreateListingForm()"
+          x-init="initSelects()"
+        >
+          <div class="head">
+            <h4 class="title is-6 has-space">Want to learn more?</h4>
+            <p>Shoot us a message and we'll get back to you</p>
+            <form>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-bigger" placeholder="Full Name" />
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input
+                    class="input is-bigger"
+                    placeholder="Email Address"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-caret">
+                  <textarea
+                    class="textarea"
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <a class="button is-primary is-fullwidth mx-1"
+                    >Send Message</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-listing></div>
+</div>
+
+</main>
+
+
+    <div
+      class="progress-wrap"
+      x-data="initBackToTop()"
+      x-init="setup()"
+      x-on:scroll.window="scroll()"
+      x-bind:class="{
+        'active-progress': scrolled,
+        '': !scrolled,
+        }"
+      x-on:click="scrollTop()"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <div id="languages-modal" class="modal" x-data="setLocalInit()">
+  <div class="modal-background modal-dismiss"></div>
+  <div class="modal-content">
+    <!--Modal card-->
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <span>Select a language</span>
+        </div>
+        <button class="modal-dismiss">
+          <span class="icon">
+            <i data-feather="x"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="check-cards-group">
+          <!--Card-->
+          <div class="check-card">
+            <input
+              type="radio"
+              x-on:click="setLocal('en')"
+              name="language_selection"
+              x-bind:checked="$locale() === 'en' ? true : false"
+            />
+            <div class="check-card-inner">
+              <img
+                src="https://dummyimage.com/150x150"
+                data-demo-src="img/icons/flags/united-states-of-america.svg"
+                alt=""
+              />
+              <div class="meta">
+                <span>English [UN]</span>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="check-card">
+            <input
+              type="radio"
+              x-on:click="setLocal('uk')"
+              name="language_selection"
+              x-bind:checked="$locale() === 'uk' ? true : false"
+            />
+            <div class="check-card-inner">
+              <img
+                src="https://dummyimage.com/150x150"
+                data-demo-src="img/icons/flags/united-states-of-america.svg"
+                alt=""
+              />
+              <div class="meta">
+                <span>Український[UK]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div id="contact-modal" class="modal">
+  <div class="modal-background modal-dismiss"></div>
+  <div class="modal-content">
+    <!--Modal card-->
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <span>Enhanced cleaning</span>
+        </div>
+        <button class="modal-dismiss">
+          <span class="icon">
+            <i data-feather="x"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="columns is-vcentered b-columns-flex-tablet-p">
+          <div class="column is-7">
+            <form x-data="initContactForm()">
+              <div id="contact-form" class="contact-form">
+                <!-- Input -->
+                <div class="field">
+                  <div class="control has-icon">
+                    <input class="input" x-model="phone" id="contactInput" type="text" placeholder="Phone Number" />
+                    <span class="form-icon">
+                      <i data-feather="phone"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- Input -->
+                </div>
+
+                <!-- Submit -->
+                <div class="control">
+                  <button
+                    type="button"
+                    class="button h-button is-primary is-bold is-fullwidth is-raised"
+                    x-on:click="submitFormContact()"
+                  >
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
