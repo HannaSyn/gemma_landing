@@ -1,0 +1,62 @@
+<div id="languages-modal" class="modal" x-data="setLocalInit()">
+  <div class="modal-background modal-dismiss"></div>
+  <div class="modal-content">
+    <!--Modal card-->
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <span>Select a language</span>
+        </div>
+        <button class="modal-dismiss">
+          <span class="icon">
+            <i data-feather="x"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="check-cards-group">
+          <!--Card-->
+          <div class="check-card">
+            <input
+              type="radio"
+              x-on:click="setLocal('en')"
+              class="modal-dismiss"
+              name="language_selection"
+              x-bind:checked="$locale() === 'en' ? true : false"
+            />
+            <div class="check-card-inner">
+              <img
+                src="img/icons/flags/united-states-of-america.svg"
+                data-demo-src="img/icons/flags/united-states-of-america.svg"
+                alt=""
+              />
+              <div class="meta">
+                <span>English [UN]</span>
+              </div>
+            </div>
+          </div>
+          <!--Card-->
+          <div class="check-card">
+            <input
+              type="radio"
+              x-on:click="setLocal('uk')"
+              class="modal-dismiss"
+              name="language_selection"
+              x-bind:checked="$locale() === 'uk' ? true : false"
+            />
+            <div class="check-card-inner">
+              <img
+                src="img/icons/flags/ukraine.png"
+                data-demo-src="img/icons/flags/ukraine.png"
+                alt=""
+              />
+              <div class="meta">
+                <span>Український[UK]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

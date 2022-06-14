@@ -1,0 +1,62 @@
+/*! _button.scss | ListKit | Css ninja 2021-2022 */
+
+/*
+    1. Button base styles
+*/
+
+/* ==========================================================================
+1. Button base styles
+========================================================================== */
+
+.button {
+  font-family: $font;
+  height: 3em;
+  padding-left: 1.75em;
+  padding-right: 1.75em;
+  border-radius: 8px;
+  transition: all 0.3s;
+
+  &.is-xsmaller {
+    height: 2.25rem;
+    padding-left: 1.15em;
+    padding-right: 1.15em;
+  }
+
+  &.is-smaller {
+    height: 2.5rem;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  &.is-heavy {
+    font-weight: 500;
+  }
+
+  &.is-default {
+    background: $white;
+    border-color: $primary;
+    color: $primary;
+  }
+
+  &.is-primary {
+    &.is-raised-hover:hover {
+      box-shadow: $primary-box-shadow;
+    }
+
+    &.is-raised {
+      box-shadow: $primary-box-shadow;
+    }
+
+    &:not(.is-outlined) {
+      color: $white !important;
+    }
+
+    &.is-outlined {
+      color: $primary;
+    }
+
+    &.is-loading {
+      color: transparent !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<div id="contact-modal" class="modal">
+  <div class="modal-background modal-dismiss"></div>
+  <div class="modal-content">
+    <!--Modal card-->
+    <div class="card">
+      <header class="card-header">
+        <div class="card-header-title">
+          <span>Enhanced cleaning</span>
+        </div>
+        <button class="modal-dismiss">
+          <span class="icon">
+            <i data-feather="x"></i>
+          </span>
+        </button>
+      </header>
+      <div class="card-content">
+        <div class="columns is-vcentered b-columns-flex-tablet-p">
+          <div class="column is-7">
+            <form x-data="initContactForm()">
+              <div id="contact-form" class="contact-form">
+                <!-- Input -->
+                <div class="field">
+                  <div class="control has-icon">
+                    <input class="input" x-model="phone" id="contactInput" type="text" placeholder="Phone Number" />
+                    <span class="form-icon">
+                      <i data-feather="phone"></i>
+                    </span>
+                  </div>
+                </div>
+                <!-- Input -->
+                </div>
+
+                <!-- Submit -->
+                <div class="control">
+                  <button
+                    type="button"
+                    class="button h-button is-primary is-bold is-fullwidth is-raised"
+                    x-on:click="submitFormContact()"
+                  >
+                    Sign In
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+/*! all.scss | ListKit | Css ninja 2021-2022 */
+
+/* ==========================================================================
+Barrel file
+========================================================================== */
+
+@import "./button";
+@import "./tag";
+@import "./form";
+#contactInput {
+    display: inline-block;
+    margin-bottom: 20px;
+}
