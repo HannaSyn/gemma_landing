@@ -59,7 +59,12 @@ SCSS Imports
     box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18),
         0 4px 13px 0 rgba(0, 0, 0, 0.15);
 }
-.liqpay-button{border:none;display:inline-block;text-align:center;padding:7px 20px;color:#fff;font-size:16px;font-weight:600;font-family:OpenSans,sans-serif;cursor:pointer;border-radius:2px;background:#7ed321;-webkit-transition:opacity .3s linear;transition:opacity .3s linear}.liqpay-button:hover{opacity:.5}.liqpay-button img{margin-right:7px;vertical-align:middle}.portmone-btn{border:none;display:inline-block;text-align:center;padding:7px 20px;color:#fff;font-size:16px;font-weight:600;background-color:#fc3031;cursor:pointer;margin-top:20px;-webkit-transition:opacity .3s linear;transition:opacity .3s linear}.portmone-btn:hover{opacity:.5}.hero{height:100vh}.cards{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.cards a{color:#a272de}.cards a:hover{opacity:.6}.contacts-field{display:-webkit-box;align-items: flex-start;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.contacts-field a{color:#a272de}.contacts-field a:hover{opacity:.6}.slide{width:25% !important;background-color:transparent !important;background-size:contain !important}button{border:none;background:transparent}
+.liqpay-button{border:none;display:inline-block;text-align:center;padding:7px 20px;color:#fff;font-size:16px;font-weight:600;font-family:OpenSans,sans-serif;cursor:pointer;border-radius:2px;background:#7ed321;-webkit-transition:opacity .3s linear;transition:opacity .3s linear}.liqpay-button:hover{opacity:.5}.liqpay-button img{margin-right:7px;vertical-align:middle}.portmone-btn{border:none;display:inline-block;text-align:center;padding:7px 20px;color:#fff;font-size:16px;font-weight:600;background-color:#fc3031;cursor:pointer;margin-top:20px;-webkit-transition:opacity .3s linear;transition:opacity .3s linear}.portmone-btn:hover{opacity:.5}.hero{height:100vh}.cards{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.cards a{color:#a272de}.cards a:hover{opacity:.6}.contacts-field{display:-webkit-box;align-items: flex-start;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.contacts-field a{color:#a272de}.contacts-field a:hover{opacity:.6}.slide{width:25% !important;background-color:transparent !important;background-size:contain !important;background-position: 50% !important;}button{border:none;background:transparent}
+
+.main-wrapper {
+    max-width: 100vw;
+    overflow: hidden;
+}
 
 .title {
     margin-bottom: 1px !important;
@@ -67,6 +72,7 @@ SCSS Imports
         font-size: 32px;
         color: #faae42;
         font-weight: bold;
+
     }
 }
 
@@ -80,4 +86,53 @@ SCSS Imports
     display: none;
     color: #fc3031;
     font-size: 16px;
+}
+
+.sub-link,
+.nav-item {
+    white-space: nowrap;
+}
+
+.sub-link span {
+    color: #656776 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .listing-nav .listing-nav-inner .right {
+        display: flex !important;
+        background: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .listing-nav-inner {
+        justify-content: flex-end !important;
+    }
+    .listing-nav .listing-nav-inner .left {
+        display: none !important;
+    }
+    .listing-nav {
+        background: transparent;
+        box-shadow: none !important;
+    }
+    .modal .check-cards-group .check-card {
+        width: 100%;
+    }
+    .hero-body {
+        padding: 10px;
+    }
+    .hero-text {
+        max-width: 100vw;
+    }
+    .hero.is-big .hero-body .hero-text .title.is-1 {
+        font-size: 1.5rem;
+    }
+    .title__sub {
+        font-size: 1.5rem !important;
+    }
+    .card-form {
+        padding: 1rem;
+    }
 }

@@ -4,7 +4,31 @@ title: CHARITY FOUNDATION 'ASSISTANCE FOR THE POOR'
 ---
 <div 
   x-data="initListingNavbar()"
-  x-on:scroll.window="scroll()">
+  x-on:scroll.window="scroll()"
+  class="main-wrapper"
+>
+  <div
+    class="mobile-sub-navigation"
+  >
+    <div class="mobile-sub-navigation--inner">
+      <div class="sub-links">
+        <a href="#charityfund" class="sub-link is-active">
+          <span x-text="$t('header-link-fund')"></span>
+        </a>
+        <a href="#donate" class="sub-link is-active">
+          <span x-text="$t('header-link-donation')"></span>
+        </a>
+        <a href="#gemma" class="sub-link is-active">
+          <span x-text="$t('header-link-product')"></span>
+        </a>
+        <a href="#contacts" class="sub-link is-active">
+          <span x-text="$t('header-link-contacts')"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
   <div
     class="listing-nav is-active">
     <div class="container">
