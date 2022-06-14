@@ -26,4 +26,7 @@ module.exports = {
       locales: "./build/locales",
     },
   },
+  env: {
+    EMAIL_RECIEVER: "hannasyniavska@gmail.com",
+  }
 };

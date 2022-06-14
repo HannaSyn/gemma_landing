@@ -1,5 +1,7 @@
 import { formValidation } from "./formValidation";
 
+const emailReciever = require("../../../../config").env.EMAIL_RECIEVER;
+
 export function sendFormInit() {
   return {
     sendForm() {
@@ -14,7 +16,7 @@ export function sendFormInit() {
       };
       Email.send({
         SecureToken : "df9c61cc-ff64-4683-9f6c-fdc1d3e8b2dd",
-        To : "annarybalko34@gmail.com",
+        To : emailReciever,
         From : "hanna.syniavska@qpard.com",
         Subject : "New mail from 'GEMMA' landing",
         Body : formBody
